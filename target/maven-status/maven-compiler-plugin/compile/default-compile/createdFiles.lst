@@ -1,2 +1,15 @@
 controller\HomeController.class
+dto\AlertAction.class
+dto\User.class
+dto\ThresholdRule.class
 dao\DBContext.class
+dto\Alert.class
+dto\UserRole.class
+contants\ObjectConstant.class
+dto\Reading.class
+dto\Pollutant.class
+dto\Sensor.class
+filter\LoginFilter.class
+dao\RoomDAO.class
+dto\Room.class
+dto\Role.class
