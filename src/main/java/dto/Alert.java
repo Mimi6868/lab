@@ -51,6 +51,36 @@ public class Alert {
         this.assignedTo = assignedTo;
     }
 
+    public Alert(Room room, Sensor sensor, ThresholdRule thresholdRule, short alertType, Integer pollutantId, LocalDateTime startTs, LocalDateTime endTs, short severity, short status, String message, Long assignedTo) {
+        this.room = room;
+        this.sensor = sensor;
+        this.thresholdRule = thresholdRule;
+        this.alertType = alertType;
+        this.pollutantId = pollutantId;
+        this.startTs = startTs;
+        this.endTs = endTs;
+        this.severity = severity;
+        this.status = status;
+        this.message = message;
+        this.assignedTo = assignedTo;
+    }
+
+    public Alert(int alertId, Room room, Sensor sensor, ThresholdRule thresholdRule, short alertType, Integer pollutantId, LocalDateTime startTs, LocalDateTime endTs, short severity, short status, String message, Long assignedTo) {
+        this.alertId = alertId;
+        this.room = room;
+        this.sensor = sensor;
+        this.thresholdRule = thresholdRule;
+        this.alertType = alertType;
+        this.pollutantId = pollutantId;
+        this.startTs = startTs;
+        this.endTs = endTs;
+        this.severity = severity;
+        this.status = status;
+        this.message = message;
+        this.assignedTo = assignedTo;
+    }
+    
+
     public int getAlertId() {
         return alertId;
     }

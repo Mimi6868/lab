@@ -29,12 +29,29 @@ public class Room {
         this.status = status;
         this.createdAt  = createdAt ;
     }
+    public Room(int roomId, String code, String name, String roomType, String location, short status ) {
+        this.roomId = roomId;
+        this.code = code;
+        this.name = name;
+        this.roomType = roomType;
+        this.location = location;
+        this.status = status;
+    }
+
+    public Room(String code, String name, String roomType, String location, short status) {
+        this.code = code;
+        this.name = name;
+        this.roomType = roomType;
+        this.location = location;
+        this.status = status;
+    }
+    
 
     public int getRoomId() {
         return roomId;
     }
 
-    public void setRoom_id(int roomId) {
+    public void setRoomId(int roomId) {
         this.roomId = roomId;
     }
 

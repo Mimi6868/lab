@@ -43,7 +43,39 @@ public class ThresholdRule {
         this.severity = severity;
         this.active = active;
         this.createdAt = createdAt;
+    }// select
+
+    public ThresholdRule(Room room, Pollutant pollutant, Double lowerValue, Double upperValue, int durationMin, short severity, boolean active) {
+        this.room = room;
+        this.pollutant = pollutant;
+        this.lowerValue = lowerValue;
+        this.upperValue = upperValue;
+        this.durationMin = durationMin;
+        this.severity = severity;
+        this.active = active;
+    }//inssert 
+
+    public ThresholdRule(int ruleId, Room room, Pollutant pollutant, Double lowerValue, Double upperValue, int durationMin, short severity, boolean active) {
+        this.ruleId = ruleId;
+        this.room = room;
+        this.pollutant = pollutant;
+        this.lowerValue = lowerValue;
+        this.upperValue = upperValue;
+        this.durationMin = durationMin;
+        this.severity = severity;
+        this.active = active;
     }
+
+    
+      
+    
+    
+    
+
+   
+     
+     
+    
 
     public int getRuleId() {
         return ruleId;

@@ -18,13 +18,14 @@ public class Reading {
 //    CONSTRAINT FK_Reading_Pollutant
 //        FOREIGN KEY (pollutant_id)
 //        REFERENCES Pollutant(pollutant_id)
+
     private int readingId;
-    private Sensor sensor ;
+    private Sensor sensor;
     private Pollutant pollutant;
-    private LocalDateTime ts ;
-    private double value ;
-    private short qualityFlag;
-    private LocalDateTime createdAt ;
+    private LocalDateTime ts;
+    private double value;
+    private Short qualityFlag;
+    private LocalDateTime createdAt;
 
     public Reading() {
     }
@@ -37,8 +38,26 @@ public class Reading {
         this.value = value;
         this.qualityFlag = qualityFlag;
         this.createdAt = createdAt;
-    }
+    }//getAll
 
+    public Reading(Sensor sensor, Pollutant pollutant, LocalDateTime ts, double value, short qualityFlag) {
+        this.sensor = sensor;
+        this.pollutant = pollutant;
+        this.ts = ts;
+        this.value = value;
+        this.qualityFlag = qualityFlag;
+    } 
+
+    public Reading(int readingId, Sensor sensor, Pollutant pollutant, LocalDateTime ts, double value, Short qualityFlag) {
+        this.readingId = readingId;
+        this.sensor = sensor;
+        this.pollutant = pollutant;
+        this.ts = ts;
+        this.value = value;
+        this.qualityFlag = qualityFlag;
+    }
+    
+    
     public int getReadingId() {
         return readingId;
     }
@@ -79,11 +98,11 @@ public class Reading {
         this.value = value;
     }
 
-    public short getQualityFlag() {
+    public Short getQualityFlag() {
         return qualityFlag;
     }
 
-    public void setQualityFlag(short qualityFlag) {
+    public void setQualityFlag(Short qualityFlag) {
         this.qualityFlag = qualityFlag;
     }
 
@@ -94,7 +113,5 @@ public class Reading {
     public void setCreatedAt(LocalDateTime createdAt) {
         this.createdAt = createdAt;
     }
-    
-    
-            
+
 }

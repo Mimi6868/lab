@@ -30,6 +30,22 @@ public class AlertAction {
         this.actionTs = actionTs;
     }
 
+    public AlertAction(Alert alert, int actorUserId, short actionType, String note) {
+        this.alert = alert;
+        this.actorUserId = actorUserId;
+        this.actionType = actionType;
+        this.note = note;
+    }
+
+    public AlertAction(int actionId, Alert alert, int actorUserId, short actionType, String note) {
+        this.actionId = actionId;
+        this.alert = alert;
+        this.actorUserId = actorUserId;
+        this.actionType = actionType;
+        this.note = note;
+    }
+    
+
     public int getActionId() {
         return actionId;
     }
